@@ -6,6 +6,7 @@
  </pre>
 <h2>Instrucciones para su funcionamiento:</h2>
 <pre>
+        Ejecutar el script run.sh y seguir las instrucciones
         Vagrant up (Esperar hasta que termine)
         Vagrant ssh 
         Crear los certificados:
