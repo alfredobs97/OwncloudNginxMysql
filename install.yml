@@ -1,0 +1,15 @@
+---
+- hosts: all
+  sudo: true
+  tasks:
+       - include: nginx.yml
+       - include: mongodb.yml
+       - include: php.yml
+       - include: mysql.yml
+       - include: user.yml
+       - include: db.yml
+#- handlers:
+#        - name: reload nginx
+#          service: name=nginx state=restarted
+#        - name: reload mongodb
+#          service: name=mongodb state=restarted

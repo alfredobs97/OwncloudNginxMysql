@@ -1,0 +1,5 @@
+---
+- name: Creando base de datos
+  mysql_db:
+    name: "owncloud"
+    state: present

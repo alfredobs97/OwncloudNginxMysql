@@ -1,0 +1,14 @@
+---
+- name: instalar mongodb
+  apt: name=mongodb-server state=present
+#- mongodb_user:
+#    database: burguers
+#    name: owncloud
+#    password: owncloud
+#    state : present
+- name: Configurando mongodb para conexiones remotas
+  template:
+   src=templates/mongodb.conf.j2
+   dest=/etc/mongodb.conf
+#  notify:
+#    - reload mongodb

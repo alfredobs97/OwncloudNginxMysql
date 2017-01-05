@@ -1,0 +1,9 @@
+---
+- name: instalar ngnix
+  apt: name=nginx state=present
+#  notify:
+#    - reload nginx
+- name: Configurando sitio owncloud
+  template:
+   src=templates/owncloud.j2
+   dest=/etc/nginx/sites-enabled/default

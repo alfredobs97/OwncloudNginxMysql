@@ -1,0 +1,5 @@
+---
+- name: instalar mysql
+  apt: name=mysql-server state=present
+  notify:
+    - reload nginx
