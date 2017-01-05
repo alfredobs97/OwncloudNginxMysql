@@ -1,10 +1,10 @@
-Owncloud de forma automática usando Vagrant
+<h1>Owncloud de forma automática usando Vagrant</h1>
 
-Plugins necesarios para el correcto funcionamiento:
+<h2>Plugins necesarios para el correcto funcionamiento:</h2>
 <pre>
         Vagrant-hostsupdater para poder entrar por el nombre de la máquina
  </pre>
-Funcionamiento:
+<h2>Instrucciones para su funcionamiento:</h2>
 <pre>
         Vagrant up (Esperar hasta que termine)
         Vagrant ssh 
